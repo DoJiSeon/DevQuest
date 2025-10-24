@@ -82,9 +82,9 @@ public class MoveControl : MonoBehaviour
             switch (state) 
             {
                 case State.Jump:
-                    var vel = rigid.velocity;
+                    var vel = rigid.linearVelocity;
                     vel.y = jumpAmount;
-                    rigid.velocity = vel;
+                    rigid.linearVelocity = vel;
                     break;
                 //insert code here...
             }
